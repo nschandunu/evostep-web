@@ -1,0 +1,102 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 10px; /* Adjust this value to create space between the navbar and the top of the viewport */
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  transition: all 0.5s ease; /* Adjusted transition duration */
+  z-index: 50;
+  padding: 10px 20px; /* Existing padding */
+  margin: 0 auto; /* Center the navbar */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+#hero01 {
+  height: 100vh; /* Example height for the hero section */
+}
+#cartPanel {
+  position: absolute; /* Ensure it is positioned correctly */
+  z-index: 100; /* Set z-index higher than the navbar */
+  top: 60px; /* Adjust the position to avoid overlapping with the navbar */
+  right: 20px; /* Position it from the right if needed */
+  /* Other styling as needed */
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+@media (min-width: 640px) {
+  .carousel-item {
+    width: 33.3333%; /* 3 items visible at once on desktop */
+  }
+}
+
+/* Arrow button styles */
+.carousel-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.carousel-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#hero2-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-wrapper {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ticker {
+    display: flex;
+    animation: ticker-scroll 15s linear infinite;
+}
+
+.ticker-inner {
+    display: flex;
+}
+
+.ticker-item {
+    margin-right: 2rem; /* Adjust spacing between items */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    /* Optional: Add padding or other styling as needed */
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
