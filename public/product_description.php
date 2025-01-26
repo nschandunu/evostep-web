@@ -13,7 +13,7 @@
     $DB_USER = 'root';
     $DB_PASSWORD = 'root';
     $DB_NAME = 'evostepdb';
-    $DB_PORT = 8889;
+    $DB_PORT = 8888;
 
     // Attempt to connect to the database
     $conn = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
