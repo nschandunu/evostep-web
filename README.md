@@ -1,5 +1,23 @@
-# EvoStep
+# EvoStep - E-Commerce
+A PHP-based e-commerce website for a shoe brand, developed as part of a university assignment, featuring CRUD operations, user and admin authentication, and a responsive UI built with Tailwind CSS.
 
+## Table of Contents
+
+- [Features](#features)
+- [Folder Structure](#folder-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Features
+
+- **User Authentication**: Secure user registration and login system.
+- **Product Listings**: Display available shoes with descriptions, images, and categories.
+- **Shopping Cart**: Add items to the cart and proceed to checkout.
+- **Admin Panel**: Manage products, categories, and orders (CRUD operations).
+- **Responsive Design**: Optimized for mobile and desktop screens using Tailwind CSS.
+- **Checkout Process**: Smooth and secure payment integration (future).
+- **Blog Section**: Informative blog posts (optional).
 
 ## Folder Structure
 
@@ -62,3 +80,34 @@
 └── tailwind.config.js            # Tailwind CSS configuration
 ```
 
+## Installation
+
+### Clone the repository:
+```bash
+git clone https://github.com/nschandunu/evostep-web.git
+cd evostep-web
+```
+### Install Dependencies (Optional):
+If you’re using Node.js for development:
+```bash
+npm install
+```
+### Database Setup:
+Create a MySQL database and import the evostepdb.sql file located in the `/database/` directory.
+
+### Tailwind CSS:
+If you’re making changes to the front-end styles, run Tailwind’s build process:
+```bash
+npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch
+```
+## Usage 
+- User can explore product catalogue and add to cart and then checkout
+- **Live Website**: [Visit the website here](https://www.evostep.store).  
+- Admins can log in to manage products, including creating, updating, and deleting products. (CRUD)
+- **Admin Panel**: [Visit the admin panel](https://www.evostep.store/admin/).
+- Admin Panel Credetials : admin@email | Admin@123
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
